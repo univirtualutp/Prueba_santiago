@@ -49,10 +49,8 @@ Route::post('contact', function() {
 
     Mail::send('emails.contact', $data, function($message) use ($toEmail, $toName, $fromEmail, $fromName, $subject)
     {
-        $message->to($toEmail, $toName)
-
+        $message->to($toEmail, $toName);
         $message->from($fromEmail, $fromName);
-
         $message->subject($subject);
     });
 
