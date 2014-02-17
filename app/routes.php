@@ -25,6 +25,11 @@ Route::get('formulario', function()
 	return View::make('formulario');
 });
 
+Route::get('clave/{tag}', function($tag)
+{
+    return "tu clave $tag es muy debil";
+});
+
 Route::get('tonces/{usuario}', function($usuario)
 {
     return "Tonces $usuario";
