@@ -1,5 +1,5 @@
-@extends(‘layout’)
+@extends('layout')
 
-@section(‘content’)
+@section('content')
 <h1>Bienvenidos a Laravel</h1>
 @stop
