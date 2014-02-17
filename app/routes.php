@@ -20,6 +20,10 @@ Route::get('welcome', function() {
    return View::make('welcome')->with('name', 'santiaguito');
 });
 
+Route::get('reportes', function() {
+   return View::make('reportes');
+});
+
 Route::get('formulario', function()
 {
 	return View::make('formulario');
