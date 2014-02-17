@@ -35,8 +35,22 @@
 </head>
 <body>
 	<div class="welcome">
-	 	querido developer, reporta tu error aqu&iacute;
-		<h1>You have arrived.</h1>
+	 	<h1>querido developer, reporta tu error aqu&iacute;</h1>
+		<form role="form">
+  <div class="form-group">
+    <label for="email">Dirección de E-mail</label>
+    <input type="email" class="form-control" id="email" placeholder="Introduce tu E-mail">
+  </div>
+  <div class="form-group">
+    <label for="role">Tipo de Usuario</label>
+    <select name="role" id="role" class="form-control">
+      <option>Usuario</option>
+      <option>Admin</option>
+    </select>
+  </div>
+  <!-- Mas campos aqui… -->
+  {{ Form::label('full_name', 'Nombre completo') }}
+</form>
 	</div>
 </body>
 </html>
