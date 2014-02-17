@@ -5,6 +5,6 @@
    </head>
    <body>
    @yield('content')
-   mi nombre es {{ name }}
+   <!--mi nombre es {{ name }} -->
    </body>
 </html>
