@@ -17,5 +17,5 @@ Route::get('/', function()
 });
 
 Route::get('welcome', function() {
-   return "Bienvenidos";
+   return View::make('welcome');
 });
