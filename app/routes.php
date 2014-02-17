@@ -29,6 +29,14 @@ Route::get('formulario', function()
 	return View::make('formulario');
 });
 
+Route::resource('admin/users', 'Admin_UsersController');
+
+
+
+
+
+
+
 Route::get('clave/{tag}', function($tag)
 {
     return "tu clave $tag es muy debil";
@@ -51,6 +59,3 @@ Route::get('plantilla/{name}', function ($name) {
    $name = ucwords(str_replace('-', ' ', $name));
    return View::make('plantilla')->with('name', $name); 
 });
-
-
-
