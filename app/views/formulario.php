@@ -37,7 +37,7 @@
 	<div class="welcome">
 	 	<h1>querido developer, reporta tu error aqu&iacute;</h1>
 <?php
-echo Form::open(array('url' => 'foo/bar', 'files' => true));
+echo Form::open(array('url' => '/contact', 'files' => true));
 echo Form::token();
 echo "<p>";
 echo Form::label('nombre');
