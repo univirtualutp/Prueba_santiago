@@ -1,1 +1,0 @@
-<h1>Bienvenidos a Laravel som</h1>
