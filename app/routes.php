@@ -43,9 +43,9 @@ Route::get('edit/{id}', function($id)
 
 Route::get('pasta-with-meatballs/{id_table}, {type}', array('as' => 'pasta_meatballs', 'uses' => 'ItalianController@pastaWithMeatBalls'))->where('id_table', '[0-9]+');
 
-Route::get('template/{name}', function ($name) {
+Route::get('plantilla/{name}', function ($name) {
    $name = ucwords(str_replace('-', ' ', $name));
-   return View::make('template')->with('name', $name); 
+   return View::make('plantilla')->with('name', $name); 
 });
 
 
