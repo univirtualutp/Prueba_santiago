@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Laravel PHP Framework</title>
+	<title>reporte de errores Univirtual</title>
 	<style>
 		@import url(//fonts.googleapis.com/css?family=Lato:700);
 
