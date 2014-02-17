@@ -7,7 +7,7 @@ echo Form::text('nombre');
 echo "apellidos";
 echo Form::text('apellidos');
 echo "Correo";
-echo Form::label('email', 'E-Mail Address');
+echo Form::label('email');
 echo "asunto";
 echo Form::text('asunto');
 echo "descripcion";
