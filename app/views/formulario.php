@@ -36,20 +36,30 @@
 <body>
 	<div class="welcome">
 	 	<h1>querido developer, reporta tu error aqu&iacute;</h1>
-		<form role="form">
-  <div class="form-group">
-    <label for="email">Dirección de E-mail</label>
-    <input type="email" class="form-control" id="email" placeholder="Introduce tu E-mail">
-  </div>
-  <div class="form-group">
-    <label for="role">Tipo de Usuario</label>
-    <select name="role" id="role" class="form-control">
-      <option>Usuario</option>
-      <option>Admin</option>
-    </select>
-  </div>
-  <!-- Mas campos aqui… -->
-</form>
+<?php
+echo Form::open(array('url' => 'foo/bar', 'files' => true));
+echo Form::token();
+echo "<p>";
+echo Form::label('nombre');
+echo Form::text('nombre');
+echo "<p>";
+echo Form::label('apellidos');
+echo Form::text('apellidos');
+echo "<p>";
+echo Form::label('email');
+echo Form::email('email');
+echo "<p>";
+echo Form::label('asunto');
+echo Form::text('asunto');
+echo "<p>";
+echo Form::label('descripcion');
+echo Form::textarea('descripcion');
+echo "<p>";
+echo Form::label('archivo de referencia');
+echo Form::file('image');
+echo "<p>";
+echo Form::submit('enviar!');
+?>
 	</div>
 </body>
 </html>
