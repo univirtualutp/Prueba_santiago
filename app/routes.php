@@ -34,3 +34,9 @@ Route::get('tonces/{usuario}', function($usuario)
 {
     return "Tonces $usuario";
 });
+
+Route::get('edit/{id}', function($id)
+{
+    return "You are editing the user with the ID #$id";
+})
+->where('id', '[0-9]+');
