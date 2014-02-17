@@ -16,6 +16,6 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
-Route::get(‘welcome’, function() {
-   return “Bienvenidos a Laravel”;
+Route::get('welcome', function() {
+   return "Bienvenidos a Laravel";
 });
