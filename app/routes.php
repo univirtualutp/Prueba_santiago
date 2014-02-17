@@ -16,6 +16,11 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
+Route::get('form1', function()
+{
+	return View::make('form1');
+});
+
 Route::get('welcome', function() {
    return View::make('welcome')->with('name', 'santiaguito');
 });
