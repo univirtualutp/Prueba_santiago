@@ -19,3 +19,8 @@ Route::get('/', function()
 Route::get('welcome', function() {
    return View::make('welcome')->with('name', 'santiaguito');
 });
+
+Route::get('formulario', function()
+{
+	return View::make('formulario');
+});
