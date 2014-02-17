@@ -1,9 +1,5 @@
-<!doctype html>
-<html>
-<head>
-      <title>Hacer vistas en Laravel es muy sencillo</title>
-   </head>
-   <body>
-   @yield(‘content’)
-   </body>
-</html>
+@extends(‘layout’)
+
+@section(‘content’)
+<h1>Bienvenidos a Laravel</h1>
+@stop
