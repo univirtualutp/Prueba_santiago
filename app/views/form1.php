@@ -2,17 +2,24 @@
 <?php
 echo Form::open(array('url' => 'foo/bar', 'files' => true));
 echo Form::token();
-echo "nombre";
+echo "<p>";
+echo Form::label('nombre');
 echo Form::text('nombre');
-echo "apellidos";
+echo "<p>";
+echo Form::label('apellidos');
 echo Form::text('apellidos');
-echo "Correo";
+echo "<p>";
 echo Form::label('email');
-echo "asunto";
+echo Form::email('email');
+echo "<p>";
+echo Form::label('asunto');
 echo Form::text('asunto');
-echo "descripcion";
+echo "<p>";
+echo Form::label('descripcion');
 echo Form::textarea('descripcion');
-echo "archivo de referencia";
+echo "<p>";
+echo Form::label('archivo de referencia');
 echo Form::file('image');
+echo "<p>";
 echo Form::submit('enviar!');
 ?>
