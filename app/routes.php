@@ -17,5 +17,5 @@ Route::get('/', function()
 });
 
 Route::get('welcome', function() {
-   return View::make('welcome')->with('name', 'santiaguito');;
+   return View::make('welcome')->with('name', 'santiaguito');
 });
