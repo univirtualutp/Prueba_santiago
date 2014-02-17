@@ -24,3 +24,8 @@ Route::get('formulario', function()
 {
 	return View::make('formulario');
 });
+
+Route::get('tonces/{usuario}', function($usuario)
+{
+    return "Tonces $usuario";
+});
