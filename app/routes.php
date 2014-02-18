@@ -65,7 +65,7 @@ Route::get('tonces/{usuario}', function($usuario)
 Route::get('edit/{id}', function($id)
 {
     return "You are editing the user with the ID #$id";
-})
+});
 //->where('id', '[0-9]+');
 
 /*Route::get('pasta-with-meatballs/{id_table}, {type}', array('as' => 'pasta_meatballs', 'uses' => 'ItalianController@pastaWithMeatBalls'))->where('id_table', '[0-9]+');
