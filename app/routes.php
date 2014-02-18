@@ -68,7 +68,7 @@ Route::get('edit/{id}', function($id)
 })
 //->where('id', '[0-9]+');
 
-Route::get('pasta-with-meatballs/{id_table}, {type}', array('as' => 'pasta_meatballs', 'uses' => 'ItalianController@pastaWithMeatBalls'))->where('id_table', '[0-9]+');
+/*Route::get('pasta-with-meatballs/{id_table}, {type}', array('as' => 'pasta_meatballs', 'uses' => 'ItalianController@pastaWithMeatBalls'))->where('id_table', '[0-9]+');*/
 
 Route::get('plantilla/{name}', function ($name) {
    $name = ucwords(str_replace('-', ' ', $name));
